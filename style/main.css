@@ -1,0 +1,350 @@
+
+
+/*******************************************
+*       Fonts
+*******************************************/
+
+@font-face{
+  font-family: 'Lobster';
+  src: url('../fonts/Lobster/Lobster-regular.woff2') format('woff2'),
+       url('../fonts/Lobster/Lobster-regular.woff') format('woff'),
+       url('../fonts/Lobster/Lobster-Regular.ttf') format('truetype')
+}
+
+@font-face{
+  font-family: 'Bungee';
+  src: url('../fonts/Bungee/bungee-regular.woff2') format('woff2'),
+       url('../fonts/Bungee/bungee-regular.woff') format('woff'),
+       url('../fonts/Bungee/Bungee-Regular.ttf') format('truetype')
+}
+
+@font-face{
+  font-family: 'Cabin';
+  src: url('../fonts/Cabin/cabin-regular.woff2') format('woff2'),
+       url('../fonts/Cabin/cabin-regular.woff') format('woff'),
+       url('../fonts/Cabin/Cabin-Regular.ttf') format('truetype'),
+       /*italic*/
+       url('../fonts/Cabin/cabin-italic.woff2') format('woff2'),
+       url('../fonts/Cabin/cabin-italic.woff') format('woff'),
+       url('../fonts/Cabin/Cabin-Italic.ttf') format('truetype'),
+       /*bold*/
+       url('../fonts/Cabin/cabin-bold.woff2') format('woff2'),
+       url('../fonts/Cabin/cabin-bold.woff') format('woff'),
+       url('../fonts/Cabin/Cabin-Bold.ttf') format('truetype')
+}
+
+/*******************************************
+*        General
+*******************************************/
+
+body{
+  font-family:'Cabin', sans-serif;
+  margin:0;
+  padding:0;
+  width:100%;
+  background-color:#F0B27C;
+}
+
+.wrapper{
+   /*max-width:1000px;*/
+   height:1000px;
+}
+
+a{
+  text-decoration: none;
+}
+/*******************************************
+*        Header
+*******************************************/
+#HeaderBar {
+  background-color: #2A2B2F;
+  margin:0;
+  width:100%;
+  box-shadow: 0 2px 2px black;
+  border-bottom: 30px solid #AD302B;
+}
+
+#HeaderBar h1 {
+  font-family: 'Lobster';
+  color: #fff;
+  display: inline-block;
+  background-color:#1E616A;
+
+}
+
+.nav-links, nav {
+  display: inline-block;
+  font-family: 'Bungee';
+}
+
+#HeaderBar li {
+ display: inline-block;
+ color: #F1B27C;
+ padding: 20px;
+}
+#HeaderBar li a {
+ color: #F1B27C;
+}
+#HeaderBar .active a{
+ color: #AD302B;
+}
+
+#HeaderBar  a:hover{
+ color: #AD302B;
+}
+#HeaderBar button {
+ font-family: 'Lobster';
+ font-size: 1.25em;
+ color: #fff;
+ background-color:#1E616A;
+ border: none;
+ border-bottom: 1px solid #4D8A92;
+ margin-top:0;
+ padding: 5px 20px;
+ vertical-align: top;
+ position:relative;
+ right: -100px;
+}
+/*******************************************
+*        Content Area
+*******************************************/
+section {
+  background-color:#F0B27C;
+}
+
+#ContentArea {
+  margin:auto;
+  width:80%;
+  position:absolute;
+  top: 150px;
+  max-width:1000px;
+}
+/*******************************************
+*        Menu Header
+*******************************************/
+
+#MenuHeader h2 {
+  font-family: 'Bungee';
+  margin-bottom: 0;
+}
+
+.address-link  {
+  color: #AD302B;
+  display:block;
+}
+.address-change {
+  color: #AD302B;
+}
+
+.menu-info{
+  width: 66%;
+  float: left;
+}
+dt {
+  display: inline;
+  text-align: left;
+}
+
+dd {
+  display: inline;
+  text-align:right;
+}
+/*******************************************
+*        Center Content Organization
+*******************************************/
+
+#MenuHeader{
+  position:absolute;
+  top: 1px;
+}
+
+#CategoryList{
+  display:inline-block;
+  position:absolute;
+  left:0;
+  top: 265px;
+}
+#ProductList{
+  float:inline-block;
+  position:absolute;
+  left: 200px;
+  top: 265px;
+}
+
+#BasketView {
+  position: absolute;
+  background-color: rgba(0,0,0, .2 );
+  top:1px;
+  padding: 10px;
+  right: 10px;
+  width: 33%;
+  height:100%;
+
+}
+
+/*******************************************
+*        Category List
+*******************************************/
+
+#CategoryList li {
+  list-style: none;
+  font-family: 'Bungee';
+  color: #fff;
+  background-color: #333333;
+  margin-bottom: 3px;
+  padding:0 20px;
+}
+
+#CategoryList .selected-category{
+  background-color: #AD302B;
+
+}
+
+#CategoryList li:hover{
+  background-color: #AD302B;
+
+}
+
+.category-description{
+  background-color:#2A2B2F;
+  color: #fff;
+  padding: 5px;
+}
+#ProductList {
+   list-style: none;
+   max-width:100%
+}
+
+/*******************************************
+*        Product List
+*******************************************/
+#ProductList h2{
+  background-image: url('../img/Burger-Category-Header.jpg');
+  background-size: cover;
+  color: rgba(0,0,0,0);
+  height: 200px;
+}
+
+#ProductList span {
+  display: inline-block;
+  width: 300px;
+}
+#ProductList span:nth-child(2n+3){
+    display:none;
+}
+
+#ProductList ul {
+   list-style: none;
+   display:flex;
+   flex-wrap: wrap;
+   justify-content:space-between;
+   max-width: 100%;
+
+}
+
+#ProductList .product-title {
+   display:block;
+   font-family: bungee;
+   color:#AD302B;
+}
+
+#ProductList ul {
+   list-style: none;
+}
+
+.product-image{
+  display: inline-block;
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+  list-style: none;
+}
+
+#prod1 .product-image {
+  background-image:url('../img/Products/Classic-Burger.jpg');
+}
+
+#prod2 .product-image {
+  background-image:url('../img/Products/Cheese-Burger.png');
+}
+
+#prod3 .product-image {
+  background-image:url('../img/Products/Bacon-Burger.png');
+}
+
+#prod4 .product-image {
+  background-image:url('../img/Products/Chicken-Burger.png');
+}
+
+#prod5 .product-image {
+  background-image:url('../img/Products/Foos-Burger.png');
+}
+
+
+li[id^="prod"] {
+  width:300px;
+  display:inline-block;
+}
+
+li[id^="prod"]:hover {
+  background-color: #fff;
+}
+#prod2 .product-image{
+  background-image: url('../img/products/Classic-Burger.jpg');
+  background-size: cover;
+}
+/*******************************************
+*        Basket View
+*******************************************/
+#BasketView div{
+
+ background-color: rgba(0,0,0, .2 );
+}
+#BasketView h2 {
+  font-family: 'Bungee';
+}
+
+#BasketView dt{
+  color: #AD302B;
+}
+
+#BasketView dd{
+  position:absolute;
+  right:0;
+}
+/*******************************************
+*        footer
+*******************************************/
+
+footer{
+  margin-top:auto;
+  position:absolute;
+  background-color:#2A2B2F;
+  height: 50px;
+  width: 100%;
+  bottom: -1200px;
+  /*margin-bottom: -250px;*/
+}
+
+footer a{
+  color: white;
+  display:flex;
+  font-size: .75em;
+  display: inline-block;
+
+}
+
+
+
+#FooterLinks {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+#FooterLinks a{
+  border-right: 1px solid white;
+  display: inline-block;
+  border-right: 1px solid white;
+  padding: 5px;
+}
